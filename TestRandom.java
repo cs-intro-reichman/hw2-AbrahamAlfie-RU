@@ -12,13 +12,12 @@ public class TestRandom {
 			} else {
 				overFive++;
 			}
-			// System.out.println(random);
 		}
 
-		double ratio = (overFive > underFive) ? (underFive / overFive) : (overFive / underFive); 
+		double ratio = (overFive > underFive) ? (underFive / overFive) : (overFive / underFive);
 
-		System.out.println("> 0.5: " + (int)overFive + " times");
-		System.out.println("<= 0.5: " + (int)underFive + " times");
+		System.out.println("> 0.5: " + (int) overFive + " times");
+		System.out.println("<= 0.5: " + (int) underFive + " times");
 		System.out.println("Ratio: " + ratio);
 
 	}
