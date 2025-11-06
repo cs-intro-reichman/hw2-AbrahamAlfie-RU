@@ -2,24 +2,24 @@
 public class TestRandom {
 	public static void main(String[] args) {
 		int nTimes = Integer.parseInt(args[0]);
-		int overFive = 0;
-		int underFive = 0;
-		double randomSum = 0;
+		double overFive = 0.0;
+		double underFive = 0.0;
 
 		for (int i = 0; i != nTimes; i++) {
 			double random = Math.random();
-			randomSum += random;
 			if (random <= 0.5) {
 				underFive++;
 			} else {
 				overFive++;
 			}
-			//System.out.println(random);
+			// System.out.println(random);
 		}
 
-		System.out.println("> 0.5: " + overFive + " times");
-		System.out.println("<= 0.5: " + underFive + " times");
-		System.out.println("Ratio: " + randomSum / nTimes);
+		double ratio = (overFive > underFive) ? (underFive / overFive) : (overFive / underFive); 
+
+		System.out.println("> 0.5: " + (int)overFive + " times");
+		System.out.println("<= 0.5: " + (int)underFive + " times");
+		System.out.println("Ratio: " + ratio);
 
 	}
 }
