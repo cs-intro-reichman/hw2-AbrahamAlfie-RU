@@ -19,6 +19,5 @@ public class TestRandom {
 		System.out.println("> 0.5: " + (int) overFive + " times");
 		System.out.println("<= 0.5: " + (int) underFive + " times");
 		System.out.println("Ratio: " + ratio);
-
 	}
 }
