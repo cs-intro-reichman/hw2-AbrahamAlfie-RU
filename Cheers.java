@@ -18,6 +18,8 @@ public class Cheers {
                         System.out.println("Give me " + aOrAn + " " + currentLetter + ": " + currentLetter + "!");
                 }
 
+                System.out.println("What does that spell?");
+
                 for (int i = 0; i < nTimes; i++) {
                         System.out.println(word + "!!!");
                 }
