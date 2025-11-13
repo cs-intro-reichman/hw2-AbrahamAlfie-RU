@@ -15,6 +15,7 @@ public class Collatz {
 				System.out.print(row + " ");
 				column = row;
 
+				// Runs the loop without checking the first iteration so 1 works.
 				do {
 					column = (column % 2 == 0) ? column / 2 : column * 3 + 1;
 					System.out.print(column + " ");

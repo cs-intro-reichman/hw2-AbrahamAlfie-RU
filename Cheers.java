@@ -11,6 +11,7 @@ public class Cheers {
                 int nTimes = Integer.parseInt(args[1]);
                 String anLetters = "AEFHILMNORSX";
 
+                //Iterates over the word and checks if the character is in anLetters, then prints an or a.
                 for (int i = 0; i < word.length(); i++) {
                         char currentLetter = word.charAt(i);
                         int indexOfAn = anLetters.indexOf(currentLetter);

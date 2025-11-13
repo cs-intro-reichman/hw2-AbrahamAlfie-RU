@@ -10,6 +10,7 @@ public class TimeCalc {
         int newHours = totalHours % 24;
         int newMinutes = totalMinutes - (totalHours * 60);
 
+        // Fixes the time format
         hours = (hours > 12) ? (hours - 12) : hours;
 
         String leadingZeroHours = (newHours < 10) ? "0" : "";

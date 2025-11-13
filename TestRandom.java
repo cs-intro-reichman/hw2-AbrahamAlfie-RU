@@ -5,6 +5,7 @@ public class TestRandom {
 		double overFive = 0.0;
 		double underFive = 0.0;
 
+		// Generates a random double and checks if its >0.5
 		for (int i = 0; i != nTimes; i++) {
 			double random = Math.random();
 			if (random <= 0.5) {

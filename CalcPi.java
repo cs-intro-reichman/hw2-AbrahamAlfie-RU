@@ -4,6 +4,7 @@ public class CalcPi {
 		int nTerms = Integer.parseInt(args[0]);
 		double finalSum = 0;
 
+		// Iterates n times and determines if it should add or subtract to the total.
 		for (int i = 0; i < nTerms; i++) {
 			double nextSum = 1.0 / (2 * i + 1);
 			nextSum = (i % 2 != 0) ? (nextSum * -1) : nextSum;
